@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/mainn"
+        android:layout_width="461dp"
+        android:layout_height="689dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="488dp"
+            android:layout_height="581dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="15dp"
+            android:contentDescription="@string/bg_all"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.59000003"
+            app:srcCompat="@mipmap/backg_all" />
+
+        <ImageView
+            android:id="@+id/Left_bg"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/left_but_bg"
+            android:onClick="about_us"
+            app:layout_constraintBottom_toTopOf="@+id/Bg_all_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/backg_cat_left" />
+
+        <ImageView
+            android:id="@+id/Right_bg"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="62dp"
+            android:layout_marginBottom="2dp"
+            android:contentDescription="@string/right_but_bg"
+            android:onClick="shops"
+            app:layout_constraintBottom_toTopOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Left_bg"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/backg_cat_right" />
+
+        <TextView
+            android:id="@+id/About_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/A_txt"
+            android:text="@string/A_txt"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/Left_bg"
+            app:layout_constraintEnd_toEndOf="@+id/Left_bg"
+            app:layout_constraintStart_toStartOf="@+id/Left_bg"
+            app:layout_constraintTop_toTopOf="@+id/Left_bg" />
+
+        <TextView
+            android:id="@+id/Shops"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SHP_txt"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/Right_bg"
+            app:layout_constraintEnd_toEndOf="@+id/Right_bg"
+            app:layout_constraintStart_toStartOf="@+id/Right_bg"
+            app:layout_constraintTop_toTopOf="@+id/Right_bg"
+            tools:text="@string/SHP_txt" />
+
+        <ImageView
+            android:id="@+id/Bg_all_image"
+            android:layout_width="375dp"
+            android:layout_height="574dp"
+            android:layout_marginStart="460dp"
+            android:layout_marginTop="87dp"
+            android:contentDescription="@string/girl_img"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/lady" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

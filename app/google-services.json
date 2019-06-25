@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "107362382219",
+    "firebase_url": "https://projekt-10cd2.firebaseio.com",
+    "project_id": "projekt-10cd2",
+    "storage_bucket": "projekt-10cd2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107362382219:android:70c2776ee51c09e3",
+        "android_client_info": {
+          "package_name": "com.example.gazetkapl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107362382219-5mep52n3hdvpdk3uq0un121aonpaa9ff.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gazetkapl",
+            "certificate_hash": "41912352167a2ba363c5030ef061206f4e3318f7"
+          }
+        },
+        {
+          "client_id": "107362382219-lvgqc1f1m1d4eorgih4tl4pkl97276af.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrGW6kyecYQIj6FPoNIoETqbxYGqaYOoM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107362382219-lvgqc1f1m1d4eorgih4tl4pkl97276af.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

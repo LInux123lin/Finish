@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shops"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/Bg_all_image2"
+        android:layout_width="388dp"
+        android:layout_height="554dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/bg_all"
+        android:onClick="next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/backg_all" />
+
+    <ImageView
+        android:id="@+id/right_bg"
+        android:layout_width="175dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="172dp"
+        android:contentDescription="@string/right_but_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/Shop_bg"
+        app:layout_constraintEnd_toEndOf="@+id/Bg_all_image2"
+        app:layout_constraintStart_toEndOf="@+id/Lidl_img"
+        app:srcCompat="@mipmap/backg_cat_right" />
+
+    <ImageView
+        android:id="@+id/left_bg"
+        android:layout_width="175dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="172dp"
+        android:contentDescription="@string/left_but_bg"
+        android:onClick="back"
+        app:layout_constraintBottom_toBottomOf="@+id/Shop_bg"
+        app:layout_constraintEnd_toEndOf="@+id/Lidl_img"
+        app:layout_constraintStart_toStartOf="@+id/Bg_all_image2"
+        app:srcCompat="@mipmap/backg_cat_left" />
+
+    <android.support.design.widget.AppBarLayout
+
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/map_bt"
+        app:layout_constraintStart_toStartOf="@+id/Shop_bg"
+        app:layout_constraintTop_toTopOf="@+id/left_bg"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/shops_lineraLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            tools:visibility="invisible" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/Shop_bg"
+        android:layout_width="365dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="4dp"
+        android:contentDescription="@string/img_bg"
+        android:onClick="next"
+        app:layout_constraintBottom_toBottomOf="@+id/Bg_all_image2"
+        app:layout_constraintEnd_toEndOf="@+id/Bg_all_image2"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/Bg_all_image2"
+        app:layout_constraintTop_toTopOf="@+id/Bg_all_image2"
+        app:layout_constraintVertical_bias="0.069"
+        app:srcCompat="@mipmap/obr_bg" />
+
+    <ImageView
+        android:id="@+id/shop_bg"
+        android:layout_width="365dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="4dp"
+        android:contentDescription="@string/img_bg"
+        android:onClick="bied"
+        app:layout_constraintBottom_toBottomOf="@+id/Bg_all_image2"
+        app:layout_constraintEnd_toEndOf="@+id/Bg_all_image2"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="@+id/Bg_all_image2"
+        app:layout_constraintTop_toTopOf="@+id/Bg_all_image2"
+        app:layout_constraintVertical_bias="0.441"
+        app:srcCompat="@mipmap/obr_bg" />
+
+    <ImageView
+        android:id="@+id/map_bt"
+        android:layout_width="146dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/map_bt"
+        android:onClick="mapa"
+        app:layout_constraintEnd_toEndOf="@+id/shop_bg"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/shop_bg"
+        app:srcCompat="@mipmap/maps"
+        tools:ignore="OnClick" />
+
+    <ImageView
+        android:id="@+id/map_bt2"
+        android:layout_width="145dp"
+        android:layout_height="83dp"
+        android:contentDescription="@string/map_bt"
+        android:onClick="mapa"
+        app:layout_constraintBottom_toBottomOf="@+id/Shop_bg"
+        app:layout_constraintEnd_toEndOf="@+id/Shop_bg"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="@+id/Shop_bg"
+        app:layout_constraintTop_toTopOf="@+id/Shop_bg"
+        app:layout_constraintVertical_bias="0.527"
+        app:srcCompat="@mipmap/maps"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/back_button"
+        android:text="@string/back_button"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/left_bg"
+        app:layout_constraintEnd_toEndOf="@+id/left_bg"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="@+id/left_bg"
+        app:layout_constraintTop_toTopOf="@+id/left_bg"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SHP_txt"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/right_bg"
+        app:layout_constraintEnd_toEndOf="@+id/right_bg"
+        app:layout_constraintStart_toStartOf="@+id/right_bg"
+        app:layout_constraintTop_toTopOf="@+id/right_bg"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <ImageView
+        android:id="@+id/Lidl_img"
+        android:layout_width="175dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/lidl_img"
+        app:layout_constraintBottom_toBottomOf="@+id/Shop_bg"
+        app:layout_constraintEnd_toStartOf="@+id/map_bt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Shop_bg"
+        app:layout_constraintTop_toTopOf="@+id/Shop_bg"
+        app:srcCompat="@mipmap/pobrane2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="172dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="8dp"
+        android:onClick="bied"
+        app:layout_constraintBottom_toBottomOf="@+id/shop_bg"
+        app:layout_constraintStart_toStartOf="@+id/shop_bg"
+        app:layout_constraintTop_toTopOf="@+id/shop_bg"
+        app:srcCompat="@mipmap/pobrane" />
+</android.support.constraint.ConstraintLayout>
